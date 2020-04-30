@@ -26,3 +26,17 @@ changelog:
     exclude:
     - '^docs:'
     - '^test:'
+brews:
+  - name: pullreminders
+    github:
+      owner: g-gaston
+      name: homebrew-pullreminders
+    skip_upload: auto
+    description: GitHub pullreminders
+    homepage: https://github.com/g-gaston/pullreminders
+    folder: Formula
+    custom_block: |
+      head do
+        url "https://github.com/g-gaston/pullreminders.git"
+        depends_on "go"
+      end
